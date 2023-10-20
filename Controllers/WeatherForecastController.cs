@@ -29,5 +29,13 @@ namespace TestDockerApp.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("GetMessage")]
+        public string GetMessage()
+        {
+            return "Este es un mensaje de ejemplo desde el controlador.";
+        }
+
+
     }
 }
